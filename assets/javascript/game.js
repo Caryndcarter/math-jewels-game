@@ -40,6 +40,7 @@ $("#losses").html(losses);
 function startGame() {
 	
 	totalScore = 0; 
+	$("#score").html(totalScore);
 	gems.zirconia.value = Math.floor(Math.random() * 12) + 1 ;
 	gems.garnet.value = Math.floor(Math.random() * 12) + 1 ;
 	gems.ruby.value = Math.floor(Math.random() * 12) + 1 ;
@@ -55,52 +56,51 @@ function startGame() {
 	
 }
 
+function compareNumbers () {
+
+		if(totalScore === randomNumber.value) {
+			wins++;
+			$("#wins").html(wins);
+			alert("You win!");
+			startGame();
+
+		} else if(totalScore > randomNumber.value) {
+			losses++;
+			$("#losses").html(losses);
+			alert("Game Over");
+			startGame();
+		}
+}
+
 startGame();
 
 gems.zirconia.gemID.on("click", function () {
 	totalScore += gems.zirconia.value;
-	$("#score").html(totalScore);	
+	$("#score").html(totalScore);
+	compareNumbers ();	
 });
 
 
 gems.garnet.gemID.on("click", function () {
 	totalScore += gems.garnet.value;
 	$("#score").html(totalScore);	
+	compareNumbers();
 });
 
 
 gems.ruby.gemID.on("click", function () {
 	totalScore += gems.ruby.value;
 	$("#score").html(totalScore);
+	compareNumbers();
 });
 
 
 gems.emerald.gemID.on("click", function () {
 	totalScore += gems.emerald.value;
 	$("#score").html(totalScore);
+	compareNumbers();
 });
 
-
-// function compareNumbers () {
-// 	if (gemClick) {
-		if(totalScore === randomNumber.value) {
-			wins++;
-			$("#wins").html(wins);
-			alert("You win!");
-			startGame();
-		}		
-
-		if(totalScore > randomNumber.value) {
-			losses++;
-			$("#losses").html(losses);
-			alert("Game Over");
-			startGame();
-		}
-	// }
-// }
-
-// compareNumbers ();
-// startGame(); 
 
 
 });
@@ -120,5 +120,7 @@ Function:
 
 Function: 
 	Compare total score to random number
+	increment wins and losses
+	alert win or lose
 
 	*/
