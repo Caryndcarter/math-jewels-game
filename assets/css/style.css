@@ -7,6 +7,10 @@
 	text-align: center;
 }
 
+.header {
+	background-color: #53c987;
+}
+
 .background {
 	width:100%;
 	background-image: url("../images/geotile.png");
@@ -55,6 +59,7 @@ p {
 
 #score {
 	color: white;
+	font-size:1.2em;
 }
 
 img.gem {
@@ -62,7 +67,7 @@ img.gem {
 }
 
 .score-background {
-	background-color:#4aaaa5;
+	background-color:#53c987;
 	font-family:'Georgia', Times, "Times New Roman", serif;
 	font-size:2em;
 	color:white;

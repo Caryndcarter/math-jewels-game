@@ -19,34 +19,88 @@ var gems = {
 
 	emerald : {
 		value : "",
-		gemID : $("emerald") 
+		gemID : $("#emerald") 
 	}
 }
 
-var gemArray = [
-	"zirconia",
-	"garnet",
-	"ruby",
-	"emerald"
-	];
+var totalScore = 0;
+$("#score").html(totalScore);
 
-var totalScore = ""; 
-var randomNumber = ""; 
-var wins = "";
-var losses = "";
+var randomNumber = {
+	value: "", 
+	class : $(".random-number")
+}
+
+var wins = 0;
+$("#wins").html(wins);
+var losses = 0;
+$("#losses").html(losses);
 
 
 function startGame() {
 	
+	totalScore = 0; 
 	gems.zirconia.value = Math.floor(Math.random() * 12) + 1 ;
 	gems.garnet.value = Math.floor(Math.random() * 12) + 1 ;
 	gems.ruby.value = Math.floor(Math.random() * 12) + 1 ;
 	gems.emerald.value = Math.floor(Math.random() * 12) + 1 ;
-	randomNumber = Math.floor(Math.random() * (120-19)) + 19;
+	randomNumber.value = Math.floor(Math.random() * (120-19)) + 19;
+	randomNumber.class.html(randomNumber.value);
 
+	console.log(gems.zirconia.value);
+	console.log(gems.emerald.value);
+	console.log(gems.ruby.value);
+	console.log(gems.garnet.value);
+	console.log(randomNumber.value);
+	
 }
 
-startGame(); 
+startGame();
+
+gems.zirconia.gemID.on("click", function () {
+	totalScore += gems.zirconia.value;
+	$("#score").html(totalScore);	
+});
+
+
+gems.garnet.gemID.on("click", function () {
+	totalScore += gems.garnet.value;
+	$("#score").html(totalScore);	
+});
+
+
+gems.ruby.gemID.on("click", function () {
+	totalScore += gems.ruby.value;
+	$("#score").html(totalScore);
+});
+
+
+gems.emerald.gemID.on("click", function () {
+	totalScore += gems.emerald.value;
+	$("#score").html(totalScore);
+});
+
+
+// function compareNumbers () {
+// 	if (gemClick) {
+		if(totalScore === randomNumber.value) {
+			wins++;
+			$("#wins").html(wins);
+			alert("You win!");
+			startGame();
+		}		
+
+		if(totalScore > randomNumber.value) {
+			losses++;
+			$("#losses").html(losses);
+			alert("Game Over");
+			startGame();
+		}
+	// }
+// }
+
+// compareNumbers ();
+// startGame(); 
 
 
 });
@@ -61,6 +115,8 @@ Function startGame:
 Function: 
 	On click, take in the gem selected.
 	Store that value associated with the gem and add it to the totalScore
+
+
 
 Function: 
 	Compare total score to random number
