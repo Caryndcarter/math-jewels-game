@@ -20,8 +20,18 @@ var gems = {
 	emerald : {
 		value : "",
 		gemID : $("#emerald") 
-	}
-}
+	},
+
+// 	doSomething: function(whateverImHanded) {
+// 		if (whateverImHanded.zirconia === "blah") {
+// 		  console.log(gem.gemID);
+// 	    } else {
+// 		  alert(gem.gemID);
+// 	    }
+// 	}
+// }
+
+// gems.doSomething(gems.zirconia)
 
 var totalScore = 0;
 $("#score").html(totalScore);
