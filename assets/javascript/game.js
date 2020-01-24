@@ -20,9 +20,10 @@ var gems = {
 	emerald : {
 		value : "",
 		gemID : $("#emerald") 
-	},
+	}
+};
 
-// 	doSomething: function(whateverImHanded) {
+/*// 	doSomething: function(whateverImHanded) {
 // 		if (whateverImHanded.zirconia === "blah") {
 // 		  console.log(gem.gemID);
 // 	    } else {
@@ -31,7 +32,7 @@ var gems = {
 // 	}
 // }
 
-// gems.doSomething(gems.zirconia)
+// gems.doSomething(gems.zirconia)*/
 
 var totalScore = 0;
 $("#score").html(totalScore);
