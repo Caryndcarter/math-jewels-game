@@ -1,14 +1,19 @@
 
+.header {
+	background-color: #53c987;
+	top: 0;
+	width: 100%;
+	clear: both; 
+	position: fixed; 
+	z-index: 1; 
+}
+
 .title-box {
 	background-color:#4aaaa5; 
 	font-family: 'Georgia', Times, "Times New Roman", serif;
 	font-style: bolder;
 	color: white;
 	text-align: center;
-}
-
-.header {
-	background-color: #53c987;
 }
 
 .background {
@@ -40,7 +45,7 @@ p {
 
 .panel-default {
 	background: #ffffff;
-	margin: 20px 0px 20px 0px;
+	margin: 100px 0px 20px 0px; 
 }
 
 .panel-default > .panel-heading {
