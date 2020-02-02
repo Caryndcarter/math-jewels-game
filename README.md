@@ -13,3 +13,5 @@ Play it here:
 * When you win or lose, the game will re-start.  
 * The number of times you win and lose are tallied at the bottom of the screen. 
 * To clear your wins and losses, refresh the page.  
+
+Screenshot needed here!
