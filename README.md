@@ -14,4 +14,4 @@ Play it here:
 * The number of times you win and lose are tallied at the bottom of the screen. 
 * To clear your wins and losses, refresh the page.  
 
-Screenshot needed here!
+![Screenshot of the Magic Math Jewels Game app]()
