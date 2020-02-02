@@ -97,17 +97,17 @@ img.gem {
 	font-family:'Georgia', Times, "Times New Roman", serif;
 	color: white;
 	text-align: center;
-	width:100px;
-	height:100px;
-	margin:15px 0px 0px 0px;
+	width:80px;
+	height:80px;
+	margin:8px 0px 0px 0px;
 	z-index:2;
 	position:relative;
 }
 
 .box-right {
-    margin: 20px 100px 20px 20px;
-    width:100px;
-    height:100px;
+    margin: 15px 80px 20px 20px;
+    width:80px;
+    height:80px;
     float:right;
     background-color:#53c987;
     z-index: 1;
