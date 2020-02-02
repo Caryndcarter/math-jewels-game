@@ -47,6 +47,8 @@ $("#wins").html(wins);
 var losses = 0;
 $("#losses").html(losses);
 
+var won = ""; 
+
 
 function startGame() {
 	
@@ -71,16 +73,32 @@ function compareNumbers () {
 
 		if(totalScore === randomNumber.value) {
 			wins++;
-			$("#wins").html(wins);
-			alert("You win!");
-			startGame();
-
+			$("#wins").html(wins)
+			setTimeout(function() {
+				won = true; 
+				announcement();
+			},50);
+			
 		} else if(totalScore > randomNumber.value) {
 			losses++;
 			$("#losses").html(losses);
-			alert("Game Over");
-			startGame();
+			setTimeout(function() {
+				won = false; 
+				announcement();
+			},50)
 		}
+}
+
+function announcement () {
+
+	if (won === true) {
+		alert("You win! Start new game?");
+		startGame();
+
+	} else if (won === false) {
+		alert("You have exceeded the total score. Game Over! Start new game?"); 
+		startGame();
+	}
 }
 
 startGame();
