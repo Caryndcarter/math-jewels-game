@@ -23,17 +23,6 @@ var gems = {
 	}
 };
 
-/*// 	doSomething: function(whateverImHanded) {
-// 		if (whateverImHanded.zirconia === "blah") {
-// 		  console.log(gem.gemID);
-// 	    } else {
-// 		  alert(gem.gemID);
-// 	    }
-// 	}
-// }
-
-// gems.doSomething(gems.zirconia)*/
-
 var totalScore = 0;
 $("#score").html(totalScore);
 
@@ -60,12 +49,6 @@ function startGame() {
 	gems.emerald.value = Math.floor(Math.random() * 12) + 1 ;
 	randomNumber.value = Math.floor(Math.random() * (120-19)) + 19;
 	randomNumber.class.html(randomNumber.value);
-
-	console.log(gems.zirconia.value);
-	console.log(gems.emerald.value);
-	console.log(gems.ruby.value);
-	console.log(gems.garnet.value);
-	console.log(randomNumber.value);
 	
 }
 
@@ -145,11 +128,10 @@ Function:
 	On click, take in the gem selected.
 	Store that value associated with the gem and add it to the totalScore
 
-
-
 Function: 
 	Compare total score to random number
 	increment wins and losses
-	alert win or lose
 
-	*/
+Function:
+	alert win or lose
+*/
