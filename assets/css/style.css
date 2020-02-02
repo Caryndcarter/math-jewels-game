@@ -36,6 +36,7 @@ h3 {
 h2 {
 	color:#1fa397;
 	font-family: 'Georgia', Times, "Times New Roman", serif;
+	margin-top: 40px;
 }
 
 p {
@@ -61,7 +62,7 @@ p {
 	width: 100%;
 	text-align: center;
 	background-color:#666666;
-	padding: 30px 0px 30px 0px;
+	padding: 20px 0px 20px 0px;
 	color: white;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: small;
@@ -105,7 +106,7 @@ img.gem {
 }
 
 .box-right {
-    margin: 15px 80px 20px 20px;
+    margin: 30px 80px 20px 20px;
     width:80px;
     height:80px;
     float:right;
