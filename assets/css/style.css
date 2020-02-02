@@ -39,6 +39,10 @@ h2 {
 	margin-top: 40px;
 }
 
+h5 {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
 p {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -114,3 +118,6 @@ img.gem {
     z-index: 1;
 }
 
+.list-group {
+	margin-bottom: 5px; 
+}
