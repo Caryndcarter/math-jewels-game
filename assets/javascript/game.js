@@ -96,7 +96,7 @@ function announcement () {
 		startGame();
 
 	} else if (won === false) {
-		alert("You have exceeded the total score. Game Over! Start new game?"); 
+		alert("You have exceeded the goal. Game Over! Start new game?"); 
 		startGame();
 	}
 }
