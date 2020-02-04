@@ -1,7 +1,7 @@
 # Magic Math Jewels Game
 A one-page math game app I built with JavaScript, jQuery and Bootstrap during my time in the Northwestern Coding Bootcamp. We were given a minimal description of what our game should do and expected to figure it out.  
 
-Play it here: 
+Play it here: https://magic-math-jewels.herokuapp.com/
 
 ## Play Magic Math Jewels!
 
